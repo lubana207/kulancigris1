@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/lh_imageView"
+        android:layout_width="238dp"
+        android:layout_height="98dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/lh_urunismi"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="#1E1D1D"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lh_urunbedeni"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="#181819"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lh_urunrenk"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#131313"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/lh_ekle"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:text="Ürün Ekle" />
+
+</LinearLayout>

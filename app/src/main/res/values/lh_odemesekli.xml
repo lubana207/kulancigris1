@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lh_girissekli">
+        <item>FaceBook ile geriş</item>
+        <item>Google ile Giriş</item>
+    </string-array>
+</resources>

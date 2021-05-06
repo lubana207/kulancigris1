@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lh_textView"
+        android:layout_width="319dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="Girişmci Sayfası"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lh_button"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:onClick="lh_olustur"
+        android:text="Kayıd Ol"
+        app:backgroundTint="#F30404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilh_mageView" />
+
+    <Button
+        android:id="@+id/lh_button2"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:text="Foto Çek "
+        android:onClick="lh_fotocek"
+        app:backgroundTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_button" />
+
+    <EditText
+        android:id="@+id/lh_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_textView" />
+
+    <EditText
+        android:id="@+id/lh_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Soyİsim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_editText" />
+
+    <RadioGroup
+        android:id="@+id/lh_radiogroup"
+        android:layout_width="150dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_editText2">
+
+        <RadioButton
+            android:id="@+id/lh_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Bay" />
+
+        <RadioButton
+            android:id="@+id/lh_radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Bayan" />
+
+        <RadioButton
+            android:id="@+id/lh_radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bilirtmek İstemiyorum" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/lh_spinner"
+        android:layout_width="191dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="68dp"
+        android:entries="@array/lh_girissekli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_editText2" />
+
+    <TextView
+        android:id="@+id/lh_textView2"
+        android:layout_width="98dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:text="Cinsyatiniz"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_editText2" />
+
+    <Button
+        android:id="@+id/lh_button3"
+        android:layout_width="195dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:onClick="lh_listele"
+        android:text="Menü"
+        app:backgroundTint="#F41606"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_button2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ilh_mageView"
+        android:layout_width="355dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lh_spinner"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
